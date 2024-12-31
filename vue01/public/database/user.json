@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "userId":1 ,
+      "name": "张三",
+      "nickname": "花花",
+      "email": "11111111222",
+      "address": "汕头大学东海岸C栋"
+    },
+    {
+      "userId":1 ,
+      "userName": "小明",
+      "passwd": "123"  
+    },
+    {
+      "userId": 2,
+      "userName": "1",
+      "passwd": "123" 
+    }
+  ]
+}

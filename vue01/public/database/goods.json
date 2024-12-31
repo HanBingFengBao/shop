@@ -1,0 +1,26 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "goodId": 0,
+      "img": "/Image/a.png",
+      "goodName": "香菜",
+      "price": "10",
+      "detail": "123" 
+    },
+    {
+      "goodId": 1,
+      "img": "/Image/clock.jpg",
+      "goodName": "钟",
+      "price": "10",
+      "detail": "123" 
+    },
+    {
+      "goodId": 2,
+      "img": "/Image/header.png",
+      "goodName": "头",
+      "price": "10",
+      "detail": "123" 
+    }
+  ]
+}

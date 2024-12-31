@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 未访问链接的样式 */
+a:link {
+    color: #333;  /* 设置未访问链接的颜色（例如蓝色） */
+    text-decoration: none; /* 设置为没有下划线 */
+}
+
+/* 已访问链接的样式 */
+a:visited {
+    color: #333;  /* 设置已访问链接的颜色与未访问一致 */
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;/* 移除默认的项目符号,小圆点 */
+}
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+
+/* 顶部导航 */
+.navbar {
+    background: #333;
+    color: white;
+    padding: 0.8em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* 搜索框 */
+.navbar .search-box {
+    display: flex;
+    align-items: center;
+}
+.navbar .search-box input[type="text"] {
+    height: 40px;
+    width: 550px;
+    margin-left: 50px;
+    margin-right: 10px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+.search-box  .el-button {
+    padding: 19px !important;
+}
+/* 顶部快速导航 */
+.navbar ul { 
+    display: flex;
+    gap: 1em;
+}
+.navbar ul li {
+margin-top: 5px;
+    display: inline;
+}
+.navbar ul li a {
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+.navbar ul li a:hover {
+    color:  #1abc9c;
+}
+.banner {
+    height: 500px;
+    margin: 20px 130px;
+    position: relative;
+    padding: 25px;
+}
+/* 侧导航 */
+.banner .aside {
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 250px;
+    height: 460px;
+    padding: 5px;
+}
+.banner .aside li {
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    display: block;
+}
+.banner .aside a {
+    position: relative;/* 宽度和父级一样 */   
+    padding-left: 36px;
+    padding-right: 19px;
+    display: block;
+    height: 50px;
+    color:  #1b8f78;
+}
+.banner .aside a span {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #333;
+}
+.banner .aside a:hover {
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 12px;
+}
+/* 轮播图 */
+.layout{
+    position: absolute; 
+    left:280px;
+    width: 400px;
+    height: 215px;
+    border-radius: 12px; 
+}
+.layout .el-carousel__item{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px; 
+}
+.layout img{
+    height: 220px;
+    width: 100%;
+    border-radius: 12px; 
+}
+
+
+/* 右边展示 */
+.card{
+    position: absolute;
+    width: 950px;
+    height: 450px;
+    float: left;
+    margin-left: 255px;
+}
+.card li{
+    position: relative;
+    float: left;
+    margin-left: 25px;    
+    margin-bottom: 14px;
+    width: 240px;
+    height: 220px;
+    text-align: center;
+    border-radius: 12px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;                                    
+}
+.card li:hover { /* 鼠标悬停时放大卡片 */
+    transform: scale(1.1); /* 鼠标悬停时，卡片放大10% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 鼠标悬停时，增加阴影 */
+}
+.card li:nth-child(3){
+    margin-left: 0;
+    width: 400px;
+    height: 220px; 
+   
+}
+.card li:nth-child(1){
+    margin-left: 425px;  
+}
+.card img{
+    border-radius: 12px;  
+    width: 100%;
+    height: 150px;
+}
+/* 今日热门的标签，在图片上显示 */
+.card li b {
+    position: absolute;
+    top:18px;
+    right: 17px;
+    width: 28px;
+    height: 100px;
+    border: 1px solid rgb(241, 122, 18);
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(240, 131, 36);
+}
+/* 特色频道 */
+.channels {
+    margin: 20px 150px;
+    padding: 20px 0;
+    position: relative;
+    width: 1200px;
+    height: 100px;
+}
+.channels button{
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin-left:20px ;
+    background: #fff;
+    color: #1abc9c;
+    border: 1px solid #333;
+}
+.channels button:hover {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+}
+.channels button:nth-child(1){
+    margin-left: 20px;  
+}
+/* 展示 */
+.showCard{
+    margin: 20px 125px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.showCard li{
+    float: left;
+    margin-left: 20px;    
+    margin-bottom: 14px;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    border-radius: 12px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;                                    
+}
+.showCard img{
+    border-radius: 12px;  
+    width: 100%;
+    height: 150px;
+}
+.showCard li:hover { /* 鼠标悬停时放大卡片 */
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+/* 版权 */
+.footer {
+    margin-top: 20px;
+    height: 200px;
+    background-color: #333;
+}
+.footer .top {
+    padding-top: 29px;
+    padding-left: 135px;
+    height: 125px;
+    border-bottom: 3px solid #434343;
+}
+.footer .top li {
+    position: relative;
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+    line-height: 58px;
+}
+.footer .top li:last-child {
+    margin-right: 0;
+}
+.footer .top li span {
+    margin-left: 77px;
+    font-size: 28px;
+    color: #fff;
+}
+.footer .bottom {
+    padding-top: 15px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.footer .bottom a {
+    font-size: 12px;
+    color: #999;
+}
+.footer .bottom p {
+    margin-bottom: 10px;
+}

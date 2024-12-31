@@ -1,0 +1,188 @@
+.mid {
+    height: 320vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.headimg {
+    top: 0px;
+    height: 250px;
+    width: 100%;
+    background-image: url("../Image/EnterBg4.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(58, 83, 85);
+    animation: headload 0.9s linear;
+}
+
+.headimg h1 {
+    color: rgb(92, 136, 177);
+    font-size: 5em;
+    text-align: center;
+    line-height: 200px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info-header {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.upload-goods {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    margin-left: 400px; /* 添加具体的间距值 */
+}
+
+.personal-info {
+    display: none;
+    font-size: 18px;
+    color: #666;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#edit-btn {
+    width: 5%;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: -5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(86, 116, 156, 0.8);
+    font-size: 16px;
+    font-family: "幼圆";
+    color: rgb(180, 216, 233);
+}
+
+#submit-btn {
+    width: 5%;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 120px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(86, 116, 156, 0.8);
+    font-size: 16px;
+    font-family: "幼圆";
+    color: rgb(180, 216, 233);
+}
+
+#edit-btn:hover {
+    background-color: rgba(118, 155, 202, 0.8);
+    box-shadow: 0 0 10px rgba(118, 155, 202, 0.8);
+}
+
+#submit-btn:hover {
+    background-color: rgba(118, 155, 202, 0.8);
+    box-shadow: 0 0 10px rgba(118, 155, 202, 0.8);
+}
+
+#avatar-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+#avatar-upload {
+    margin-left: 10px;
+}
+
+
+
+
+.project-info {
+    margin-left: 500px;
+    font-size: 18px;
+    color: #666;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#projectedit-btn {
+    width: 5%;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 500px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(86, 116, 156, 0.8);
+    font-size: 16px;
+    font-family: "幼圆";
+    color: rgb(180, 216, 233);
+}
+
+
+
+#projectsubmit-btn {
+    width: 5%;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 720px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(86, 116, 156, 0.8);
+    font-size: 16px;
+    font-family: "幼圆";
+    color: rgb(180, 216, 233);
+}
+
+#projectedit-btn:hover {
+    background-color: rgba(118, 155, 202, 0.8);
+    box-shadow: 0 0 10px rgba(118, 155, 202, 0.8);
+}
+
+#projectsubmit-btn:hover {
+    background-color: rgba(118, 155, 202, 0.8);
+    box-shadow: 0 0 10px rgba(118, 155, 202, 0.8);
+}
+
+#projectavatar-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#projectavatar-upload {
+    margin-left: 10px;
+}
+
+.form-row {
+    margin-top: 10px;
+}
+
+.form-input {
+    width: 200px; /* 根据需要调整宽度 */
+    height: 80px; /* 设置适当的高度以容纳多行文本 */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical; /* 允许垂直调整大小（可选） */
+}
+
+
+
+.all-project{
+	margin-top: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    padding-left: 1100px; /* 使用内边距代替外边距 */
+   text-decoration: none; /* 移除下划线 */
+}
